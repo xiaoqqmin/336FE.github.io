@@ -5,7 +5,7 @@
 
 * 任务一：[面向零基础的HTML代码编写](http://ife.baidu.com/task/detail?taskId=1) | [Demo](http://336fe.github.io/BaiduTask1_1/)
 * 任务二：[基于任务1的HTML代码，实现简单的CSS代码编写](http://ife.baidu.com/task/detail?taskId=2) | [Demo](http://336fe.github.io/BaiduTask1_2/)
-* 任务三：[HTML、CSS布局入门，三栏式布局的实践]((http://ife.baidu.com/task/detail?taskId=3)
+* 任务三：[HTML、CSS布局入门，三栏式布局的实践](http://ife.baidu.com/task/detail?taskId=3)
 * 任务四：HTML、CSS布局深入，定位和居中问题的实践
 * 任务五：基于任务1的HTML代码，实现一个稍微复杂的CSS代码编写
 * 任务六：按照设计图，通过HTML/CSS实现一个像报纸杂志一样的页面布局排版
