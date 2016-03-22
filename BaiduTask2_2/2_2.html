@@ -28,7 +28,7 @@ var aqiData = [
   将空气质量指数大于60的城市显示到aqi-list的列表中
   */
   for(var i = 0;i < 6;i++){
-    for(var j = 1;j < 6;j++){
+    for(var j = i;j < i;j++){
       if(aqiData[i][1]>aqiData[j][1]){
         var aa = aqiData[i];
         aqiData[i]=aqiData[j];
