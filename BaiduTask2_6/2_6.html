@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+<input id="num_input" type="text">
+<button id="left-in">左侧入</button>
+<button id="right-in">右侧入</button>&nbsp;
+<button id="left-out">左侧出</button>
+<button id="right-out">右侧出</button></br>
+<div id = "que"></div>
+
+
+<script type="text/javascript">
+
+var queue = [];
+
+function render(){
+	text = ""
+	for(var i = 0;i<queue.length;i++){
+		text = text + "<span id = " + i +">" + queue[i] + "</span>&nbsp;"
+	}
+	document.getElementById("que").innerHTML = text;
+}
+document.getElementById("left-in").onclick = function(){
+	var number = document.getElementById("num_input").value;
+	if(!(/^[0-9]+.?[0-9]*$/.test(number))){
+		alert("请输入数字！");
+		return;
+	}
+	queue.unshift(number);
+	render();
+}
+document.getElementById("right-in").onclick = function(){
+	var number = document.getElementById("num_input").value;
+	if(!(/^[0-9]+.?[0-9]*$/.test(number))){
+		alert("请输入数字！");
+		return;
+	}
+	queue.push(number);
+	render();
+}
+document.getElementById("left-out").onclick = function(){
+	var item = queue.shift();
+	alert(item);
+	render();
+}
+document.getElementById("right-out").onclick = function(){
+	var item = queue.pop();
+	alert(item);
+	render();
+}
+
+document.getElementById("que").onclick = function(e){
+	var index = e.target.getAttribute("id");
+	if(index.toLowerCase()!="que"){
+		queue.splice(index,1);
+		render();
+	}
+}
+
+
+</script>
+</body>
+</html>
